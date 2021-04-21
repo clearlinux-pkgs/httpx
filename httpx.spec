@@ -4,7 +4,7 @@
 #
 Name     : httpx
 Version  : 0.17.1
-Release  : 9
+Release  : 10
 URL      : https://files.pythonhosted.org/packages/f2/f4/de27c93aaaf6f9b24334a320b40d9d6df379c4d707e777bde07aedc83c35/httpx-0.17.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/f2/f4/de27c93aaaf6f9b24334a320b40d9d6df379c4d707e777bde07aedc83c35/httpx-0.17.1.tar.gz
 Summary  : The next generation HTTP client.
@@ -24,6 +24,7 @@ BuildRequires : certifi
 BuildRequires : h2
 BuildRequires : httpcore
 BuildRequires : sniffio
+Patch1: deps.patch
 
 %description
 <p align="center">
@@ -64,13 +65,14 @@ python3 components for the httpx package.
 %prep
 %setup -q -n httpx-0.17.1
 cd %{_builddir}/httpx-0.17.1
+%patch1 -p1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1615817744
+export SOURCE_DATE_EPOCH=1619028622
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
