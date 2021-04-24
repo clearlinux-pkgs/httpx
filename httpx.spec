@@ -4,7 +4,7 @@
 #
 Name     : httpx
 Version  : 0.17.1
-Release  : 10
+Release  : 11
 URL      : https://files.pythonhosted.org/packages/f2/f4/de27c93aaaf6f9b24334a320b40d9d6df379c4d707e777bde07aedc83c35/httpx-0.17.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/f2/f4/de27c93aaaf6f9b24334a320b40d9d6df379c4d707e777bde07aedc83c35/httpx-0.17.1.tar.gz
 Summary  : The next generation HTTP client.
