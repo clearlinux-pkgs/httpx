@@ -1,5 +1,5 @@
 PKG_NAME := httpx
-URL = https://files.pythonhosted.org/packages/ba/a5/e6a09b863d61ef99dc5dc70ae3102f0e382195e69625bc428908b7c246b0/httpx-0.21.0.tar.gz
+URL = https://files.pythonhosted.org/packages/5d/d4/739bdfb68a7dee54c795e1977abd0c81f83235499488a10717b699dab061/httpx-0.21.1.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
